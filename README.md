@@ -11,7 +11,7 @@ I've recorded all of my chat history and tuning settings for Gemini Pro on GitHu
 - For ease of reading in this article, I've included screenshots of the actual Google Colab Enterprise notebook I used when working with the Gemini model for the first time. All of the screenshots at full resolution, a .py and .ipynb file of the notebook are also available in the GitHub repo.
 - I've included footnotes to give additional background and resources that have proved helpful to me and my learning across this area.
 - It's also important to note this work is a purely investigative and academic perspective, I did not receive and have not submitted anything contained within this article or the associated repo to a bug bounty program for AI vulnerabilities.
-- I worked with Gemini exclusively through it's API via import vertexai and model = GenerativeModel("gemini-1.0-pro") as shown in the linked notebook.
+- I worked with Gemini exclusively through it's API via `import vertexai` and `model = GenerativeModel("gemini-1.0-pro")` as shown in the linked notebook.
 Lastly, I didn't modify any of the standard response validation settings, which after doing a bit of reading, found that if you set response_validation=False when initiating a chat with Gemini, you may be able to allow "blocked or otherwise incomplete responses" into the chat history - which "might lead to future interactions being blocked by the service."
 
 ## TL;DR - Findings and Takeaway
